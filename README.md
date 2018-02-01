@@ -1,23 +1,33 @@
-# What they forgot to teach you
-### notes 
+# Notes--What they forgot to teach you about R
 
-Set up Github
+##Set up Github on local shell
 
-GBMAC0305:test tma$ git clone https://github.com/tingmar/test.git   
-GBMAC0305:test tma$ ls 
+```r
+pwd 
+/Users/tma/Desktop/Training/R_conference  
+git clone https://github.com/tingmar/test.git
+ls
+README.md
+```
 
->>README.md
-
-GBMAC0305:test tma$ git remote show origin
+```r
+git remote show origin
+```
 
 >>`* remote origin`    
->>  Fetch URL: https://github.com/tingmar/test.git   
->>  Push  URL: https://github.com/tingmar/test.git   
->>  HEAD branch: master 
+>>`Fetch URL: https://github.com/tingmar/test.git`   
+>>`Push  URL: https://github.com/tingmar/test.git`   
+>>`HEAD branch: master` 
 
+make some changes on the README.md file and save it and 
+then push it to the gitHub
+
+```r
 git add -A   
 git commit -m "A commit from my local computer"   
 git push
+```
+Reload gitHub repo and the file will be updated there.
 
 
 
