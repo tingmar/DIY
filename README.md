@@ -119,11 +119,11 @@ library(fs)
     ## 1 DIY.Rproj  file          205 rw-r--r--   2018-02-01 00:44:00 tma   staff
     ## 2 Output     direct…       102 rwxr-xr-x   2018-02-01 21:42:08 tma   staff
     ## 3 README.Rmd file        2.25K rw-r--r--   2018-02-01 23:05:37 tma   staff
-    ## 4 README.md  file        4.31K rw-r--r--   2018-02-01 22:57:32 tma   staff
+    ## 4 README.md  file        3.88K rw-r--r--   2018-02-01 23:05:41 tma   staff
     ## 5 folk.png   file      210.81K rw-r--r--   2018-02-01 16:41:49 tma   staff
     ## 6 test.Rmd   file          798 rw-r--r--   2018-02-01 16:58:23 tma   staff
     ## 7 test.md    file         1007 rw-r--r--   2018-02-01 16:58:25 tma   staff
-    ## 8 test_files direct…       102 rwxr-xr-x   2018-02-01 23:05:41 tma   staff
+    ## 8 test_files direct…       102 rwxr-xr-x   2018-02-01 23:08:47 tma   staff
     ## # ... with 11 more variables: device_id <dbl>, hard_links <dbl>,
     ## #   special_device_id <dbl>, inode <dbl>, block_size <dbl>, blocks <dbl>,
     ## #   flags <int>, generation <dbl>, access_time <dttm>, change_time <dttm>,
