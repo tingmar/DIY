@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Notes--What they forgot to teach you about R"
 output: github_document
 ---
 
@@ -8,8 +8,6 @@ library(tidyverse)
 library(here)
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-# Notes--What they forgot to teach you about R
 
 ##Set up Github connection on local shell
 
@@ -25,10 +23,6 @@ README.md
 
 ```r
 git remote show origin
-```
-
-```{r} 
-summary(cars)
 ```
 
 >>`* remote origin`    
