@@ -1,0 +1,118 @@
+---
+title: "Untitled"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Notes--What they forgot to teach you about R
+
+##Set up Github connection on local shell
+
+Make a repo on gitHub and clone it to local computer
+
+```r
+pwd 
+/Users/tma/Desktop/Training/R_conference  
+git clone https://github.com/tingmar/test.git
+ls
+README.md
+```
+
+```r
+git remote show origin
+```
+
+```{r} 
+summary(cars)
+```
+
+>>`* remote origin`    
+>>`Fetch URL: https://github.com/tingmar/test.git`   
+>>`Push  URL: https://github.com/tingmar/test.git`   
+>>`HEAD branch: master` 
+
+Make some changes on the README.md file and save it and 
+then push it to the gitHub
+
+```r
+git add -A   
+git commit -m "A commit from my local computer"   
+git push
+```
+Reload gitHub repo and the file will be updated there.
+
+#Folk and Clone
+Great idea to reproduce other people's code
+![fork first then clone](/Users/tma/Desktop/Training/DIY/folk.png)
+
+
+#How to query gitHub
+
+
+repo:tidyverse/tidyverse filter
+user:tidyverse case_when language:r
+
+#Useful packages for file management
+
+here: More friendly to .Rmd than file.path()
+
+```{r}
+here::here()
+here::here("Output")
+df <- data.frame(a=1, b="a")
+write_csv(df, path=here("Output", "df.csv"))
+```
+
+
+
+fs
+```{r}
+library(fs)
+    
+    dir_create("foo")
+    file_create("bar")
+    file_copy("test.md", "test_files/test.md", overwrite = TRUE)
+    file_delete(c("bar", "test_files/test.md"))
+     
+    # Create a directory and put a few files in it
+    files <- file_create(c("foo/bar", "foo/baz"))
+    file_exists(files)
+    file_delete(c("foo/bar", "foo/baz"))
+    dir_delete(c("foo"))
+    
+    
+    path_file("test.md")
+    
+    dir <- dir_create(file_temp())
+    files <- file_create(path(dir, letters[1:5]))
+    dir_delete(dir)
+    
+    dir_ls(".", recursive = TRUE, glob = "*.Rmd")
+    dir_ls(here("test_files"), recursive = TRUE, glob = "*.md")
+    dir_info(".")
+    
+    
+    path_file((here("test_files", "df.csv" )))
+    path_dir((here("test_files", "df.csv" )))
+    path_ext((here("test_files", "df.csv" )))
+    path_ext("file.tar.gz")
+    path_ext_remove("file.tar.gz")
+    
+    path_abs(here())
+    path_abs(".")
+    normalizePath("~")
+    
+```
+
+
+#Iteration
+
+The above is located in my gitHub: <https://github.com/tingmar/DIY>
+
+* [Github](www.github.com)
+
