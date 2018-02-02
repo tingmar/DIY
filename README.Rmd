@@ -42,7 +42,7 @@ Reload gitHub repo and the file will be updated there.
 
 #Folk and Clone
 Great idea to reproduce other people's code
-![fork first then clone](/Users/tma/Desktop/Training/DIY/folk.png)
+![fork first then clone](./folk.png)
 
 
 #How to query gitHub
